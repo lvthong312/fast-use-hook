@@ -1,4 +1,10 @@
-# fast-hooks
+# fast-use-hooks
+
+<p align="center">
+  <img src="https://img.shields.io/npm/v/fast-use-hooks?color=green" alt="npm version" />
+  <img src="https://img.shields.io/npm/dm/fast-use-hooks" alt="npm downloads" />
+  <img src="https://img.shields.io/badge/react--native-0.70+-blue" alt="react-native" />
+</p>
 
 Support Hooks
 
@@ -6,7 +12,7 @@ Support Hooks
 
 
 ```sh
-npm install fast-hooks
+npm install fast-use-hooks
 ```
 
 
@@ -29,7 +35,7 @@ import {
   usePrevious,
   useThrottle,
   useToggle,
-} from 'fast-hooks'; // giả sử bạn để tất cả hooks trong ./hooks
+} from 'fast-use-hooks'; // giả sử bạn để tất cả hooks trong ./hooks
 
 export default function App() {
   // 1️⃣ useDebounceValue

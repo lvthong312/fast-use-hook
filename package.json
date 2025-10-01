@@ -1,6 +1,6 @@
 {
   "name": "fast-use-hooks",
-  "version": "0.1.0",
+  "version": "0.6.0",
   "description": "Support Hooks",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -47,14 +47,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lvthong312/fast-hooks.git"
+    "url": "git+https://github.com/lvthong312/fast-use-hook.git"
   },
   "author": "Thong Luong <lvthong312@gmail.com> (https://github.com/lvthong312)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lvthong312/fast-hooks/issues"
+    "url": "https://github.com/lvthong312/fast-use-hook/issues"
   },
-  "homepage": "https://github.com/lvthong312/fast-hooks#readme",
+  "homepage": "https://github.com/lvthong312/fast-use-hook#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
