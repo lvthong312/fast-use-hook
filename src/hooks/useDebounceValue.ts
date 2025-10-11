@@ -35,7 +35,7 @@ export function useDebounceValue<T = string>(
         }, delay);
 
         return () => clearTimeout(handler); // tự clear timeout trước đó
-    }, [value, delay, onDebouncedChange]);
+    }, [value, delay]);
 
     return { value, setValue, debouncedValue };
 }

@@ -9,3 +9,6 @@ export * from './hooks/useToggle';
 export * from './hooks/usePrevious';
 export * from './hooks/useTimeout';
 export * from './hooks/useInterval';
+export * from './hooks/useMultipleAsync';
+export * from './hooks/useDelay';
+export * from './hooks/useMakeApiExample';

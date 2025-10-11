@@ -1,3 +1,10 @@
+import {
+  useAsync,
+  useDebounceValue,
+  usePrevious,
+  useThrottle,
+  useToggle,
+} from 'fast-use-hooks';
 import { useEffect } from 'react';
 import {
   ActivityIndicator,
@@ -7,15 +14,13 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import {
-  useAsync,
-  useDebounceValue,
-  usePrevious,
-  useThrottle,
-  useToggle,
-} from 'fast-hooks'; // giả sử bạn để tất cả hooks trong ./hooks
 
 export default function App() {
+  // return <DebounceValueExample />;
+  // return <MakeApiExample />;
+  // return <DelayExample />;
+  // return <MultipleAsyncExample />;
+
   // 1️⃣ useDebounceValue
   const {
     value,
@@ -85,8 +90,8 @@ export default function App() {
 
       <Text style={styles.heading}>4️⃣ useAsync (fetch todo)</Text>
       {loading && <ActivityIndicator />}
-      {error && <Text style={{ color: 'red' }}>{error.message}</Text>}
-      {asyncData && <Text>{`Todo #${asyncData.id}`}</Text>}
+      {error && <Text style={{ color: 'red' }}>{error?.message}</Text>}
+      {asyncData && <Text>{`Todo #${asyncData?.id}`}</Text>}
     </View>
   );
 }

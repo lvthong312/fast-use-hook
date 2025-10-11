@@ -41,6 +41,12 @@ export function useAsync<T, A extends any[]>(
 
   const execute = useCallback(
     async (...args: A | any) => {
+      if (!asyncFunction) {
+        setValue(null);
+        setError(null);
+        return;
+      }
+
       setLoading(true);
       setError(null);
       try {

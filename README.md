@@ -14,6 +14,12 @@ Support Hooks
 ```sh
 npm install fast-use-hooks
 ```
+## 📸 Preview
+<p align="center">
+  <img src="./example/DebounceValueExample.png" alt="App Screenshot" width="200" />
+  <img src="./example/DelayExample.png" alt="App Screenshot" width="200" />
+  <img src="./example/MultipleAsyncExample.png" alt="App Screenshot" width="200" />
+</p>
 
 
 ## Usage
