@@ -1,6 +1,6 @@
 {
   "name": "fast-use-hooks",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "description": "Support Hooks",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -84,6 +84,8 @@
     "typescript": "^5.9.2"
   },
   "peerDependencies": {
+    "@types/lodash": "*",
+    "lodash": "*",
     "react": "*",
     "react-native": "*"
   },
