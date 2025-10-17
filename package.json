@@ -1,6 +1,6 @@
 {
   "name": "fast-use-hooks",
-  "version": "0.15.0",
+  "version": "0.18.0",
   "description": "Support Hooks",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -71,6 +71,7 @@
     "@types/lodash": "^4.17.20",
     "@types/react": "^19.1.12",
     "commitlint": "^19.8.1",
+    "dayjs": "^1.11.18",
     "del-cli": "^6.0.0",
     "eslint": "^9.35.0",
     "eslint-config-prettier": "^10.1.8",
@@ -85,6 +86,7 @@
   },
   "peerDependencies": {
     "@types/lodash": "*",
+    "dayjs": "*",
     "lodash": "*",
     "react": "*",
     "react-native": "*"

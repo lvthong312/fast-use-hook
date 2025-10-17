@@ -12,3 +12,5 @@ export * from './hooks/useInterval';
 export * from './hooks/useMultipleAsync';
 export * from './hooks/useDelay';
 export * from './hooks/useMakeApiExample';
+export * from './hooks/useCountDownTimeReach';
+

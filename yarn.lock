@@ -5535,6 +5535,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dayjs@npm:^1.11.18":
+  version: 1.11.18
+  resolution: "dayjs@npm:1.11.18"
+  checksum: cc90054bad30ab011417a7a474b2ffa70e7a28ca6f834d7e86fe53a408a40a14c174f26155072628670e9eda4c48c4ed0d847d2edf83d47c0bfb78be15bbf2dd
+  languageName: node
+  linkType: hard
+
 "debug@npm:2.6.9, debug@npm:^2.6.9":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -6790,6 +6797,7 @@ __metadata:
     "@types/lodash": ^4.17.20
     "@types/react": ^19.1.12
     commitlint: ^19.8.1
+    dayjs: ^1.11.18
     del-cli: ^6.0.0
     eslint: ^9.35.0
     eslint-config-prettier: ^10.1.8
@@ -6802,6 +6810,9 @@ __metadata:
     release-it: ^19.0.4
     typescript: ^5.9.2
   peerDependencies:
+    "@types/lodash": "*"
+    dayjs: "*"
+    lodash: "*"
     react: "*"
     react-native: "*"
   languageName: unknown

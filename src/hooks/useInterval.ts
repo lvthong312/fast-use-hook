@@ -18,18 +18,19 @@ import { useEffect, useRef } from "react";
  * @example
  * useInterval(() => console.log("Tick"), 1000); // log mỗi 1 giây
  */
-export function useInterval(callback: () => void, delay: number | null) {
-    const savedCallback = useRef(callback);
-
-    // lưu callback mới nhất
+interface IOptions {
+    delay: number | null
+    stop?: boolean | null
+}
+export function useInterval(callback: () => void, options: IOptions) {
+    const id = useRef<any>(null)
     useEffect(() => {
-        savedCallback.current = callback;
-    }, [callback]);
-
-    useEffect(() => {
-        if (delay === null) return;
-
-        const id = setInterval(() => savedCallback.current(), delay);
-        return () => clearInterval(id); // clear khi unmount hoặc delay thay đổi
-    }, [delay]);
+        if (options?.delay === null) return;
+        if (options?.stop === true) {
+            clearInterval(id?.current)
+            return;
+        }
+        id.current = setInterval(() => callback?.(), options?.delay);
+        return () => clearInterval(id?.current); // clear khi unmount hoặc delay thay đổi
+    }, [options?.delay, options?.stop]);
 }
